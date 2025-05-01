@@ -95,7 +95,7 @@ window.onload = function () {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                showToast("Email Sent!!", "success");
+                showToast("Message Sent!!", "success");
                 document.getElementById("contact-form").reset();
             } else {
                 console.error("FAILED...", data.error);
