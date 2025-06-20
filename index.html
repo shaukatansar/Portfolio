@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaukat's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0BN5H38ZJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Y0BN5H38ZJ');
+    </script>
+</head>
+
+<body>
+    <header class="header" id="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#service" style="--i:3;">Skills</a>
+            <a href="#portfolio" style="--i:4;">Projects Handled</a>
+            <a href="#contact" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+
+    <!--HomePage-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 id="home-sal"></h3>
+            <h1 id="home-name"></h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p id="home-desc"></p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/shaukat-ansar?original_referer=" target="_blank"
+                    rel="noopener noreferrer" style="--i:7;"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/born_confused_yo" target="_blank" rel="noopener noreferrer"
+                    style="--i:8;"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1g9u18wRilho5eULbrQ-55ysDQ6WcaB3Z/view?usp=sharing" target="_blank"
+                rel="noopener noreferrer" style="--i:9;" class="button" id="button-text1"></a>
+        </div>
+
+        <div class="home-img">
+            <img src="Images/home.png" alt="">
+        </div>
+    </section>
+
+    <!--About-->
+    <section class="about" id="about">
+        <div class="about-img" id="about-img">
+            <img src="Images/about.png" alt="">
+        </div>
+
+        <div class="about-content" id="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p id="about-desc"></p>
+            <button class="button button-text2" onclick="openPopup('about')"></button>
+        </div>
+
+    </section>
+
+    <!--Skills-->
+    <section class="service" id="service">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="services-container">
+
+            <div class="services-box">
+                <i class='bx bx-laptop'></i>
+                <h3>Manual Testing</h3>
+                <p id="sk1"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill1')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-data'></i>
+                <h3>Database Testing</h3>
+                <p id="sk2"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill2')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-plug'></i>
+                <h3>API Testing</h3>
+                <p id="sk3"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill3')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx  bxs-component'></i>
+                <h3>Middleware Architecture</h3>
+                <p id="sk13"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill13')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-credit-card'></i>
+                <h3>Payments Testing</h3>
+                <p id="sk4"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill4')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-cog'></i>
+                <h3>Automation Testing</h3>
+                <p id="sk5"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill5')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-report'></i>
+                <h3>Status Report Generation</h3>
+                <p id="sk6"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill6')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bug'></i>
+                <h3>Defect Tracking & Reporting</h3>
+                <p id="sk7"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill7')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-user'></i>
+                <h3>Agile & Scrum Methodologies</h3>
+                <p id="sk8"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill8')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-devices'></i>
+                <h3>Cross-Browser & Mobile Testing</h3>
+                <p id="sk9"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill9')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-analyse'></i>
+                <h3>Root Cause Analysis</h3>
+                <p id="sk10"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill10')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-test-tube'></i>
+                <h3>Test Management</h3>
+                <p id="sk11"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill11')"></button>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-user-voice'></i>
+                <h3>User Acceptance Testing</h3>
+                <p id="sk12"></p>
+                <button class="button button-text2" id="button-text2" onclick="openPopup('skill12')"></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Work <span>Experience</span></h2>
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="Images/Telecom.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4 id="ph-1"></h4>
+                    <p id="ph-2"></p>
+                    <a href="javascript:void(0);" onclick="openPopup('project1')"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Images/Online Learning Managemen.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4 id="ph-3"></h4>
+                    <p id="ph-4"></p>
+                    <a href="javascript:void(0);" onclick="openPopup('project2')"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Images/E Commerce website.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4 id="ph-5"></h4>
+                    <p id="ph-6"></p>
+                    <a href="javascript:void(0);" onclick="openPopup('project3')"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contact-form" action="#">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Full Name" required />
+                <input type="email" id="email" name="email" placeholder="Email Address" required />
+            </div>
+            <div class="input-box">
+                <input type="number" id="number" name="number" placeholder="Mobile Number">
+                <input type="text" id="subject" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" id="button-text3" class="button"></button>
+        </form>
+
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p id="footer-motto-line">
+                    <strong>My Motto:</strong> <span id="footer-quote" class="footer-quote"></span>
+                </p>
+                <p id="footer-text1"></p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </div>
+
+        <p style="display: none;">This page has been visited <span id="visitCount">...</span> times.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="textContent.js"></script>
+
+    <div id="global-overlay"></div>
+
+    <div id="global-popup">
+        <div class="popup-content">
+            <div class="modal-header">
+                <a href="javascript:void(0);" id="popup-close">
+                    <i class='bx bx-x-circle'></i>
+                </a>
+                <h2 id="popup-title"></h2>
+            </div>
+            <div class="popup-body">
+                <p id="popup-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        fetch("https://my-counter-omega.vercel.app/api/counter")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("visitCount").innerText = data.count;
+                console.log("Visit count:", data.count);
+            });
+    </script>
+
+</body>
+
+</html>
