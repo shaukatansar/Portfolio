@@ -17,6 +17,7 @@ export const popupContents = {
      Certifications:
      - ISTQB Foundation Level Certified
      - Microsoft AZ-900 Certified
+     - Microsoft AI-900 Certified
     `},
 
   skill1: {
