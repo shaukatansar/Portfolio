@@ -63,7 +63,7 @@ import { popupContents } from './textContent.js';
 // ========== Typed ==========
 {
     var typed = new Typed('.multiple-text', {
-        strings: ['Quality Assurance Engineer', 'Bug Hunter', 'Automation Enthusiast', 'Novel Reader', 'Badminton Player'],
+        strings: ['QA Engineer','Automation Architect','Bug Hunter','Agile Practitioner','Novel Reader','Badminton Player'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
