@@ -1,19 +1,18 @@
 export const popupContents = {
   about: {
     title: "About Me", text: `
-      I am a passionate Quality Assurance (QA) professional with a strong foundation in software testing and a growing interest in development and AI technologies.
+      I am a passionate Quality Assurance (QA) professional with a strong foundation in Software Testing and a growing interest in AI technologies.
 
-      With over 5+ years of experience in both manual and automation testing, I've worked across domains like e-commerce, telecom and learning management systems. My core strengths include functional testing, API testing, payments testing, database validation and automation framework. I have also contributed to testing middleware architecture involving message queues and monitoring tools like Azure Application Insights, Service Bus Explorer and Splunk.
+      With over 6+ years of experience in both Automation and Manual testing, I've worked across domains like E-Commerce, Telecom, Learning Management Systems and BFSI(Banking, Financial Service and Insurance). My core strengths include Automation Testing, Functional Testing, Integration Testing, Payments testing, Database Testing. I have also contributed to testing Middleware Architecture involving message queues using monitoring tools like Azure Application Insights, Service Bus Explorer and Splunk.
 
-      I'm a strong believer in continuous learning and have expanded my technical skills into Java, Python (beginner) and tools like Postman, Swagger, JIRA, Azure DevOps, Jenkins and Git. I also have working knowledge of CI/CD, Agile methodologies and cross-browser/mobile testing using platforms like BrowserStack and Sauce Labs. I'm currently exploring AI-assisted testing and chatbot validation, with growing interest in applying AI to improve QA efficiency and coverage.
+      I'm a strong believer in continuous learning and have expanded my technical skills into Java, C#, Typescript (beginner) and tools like Postman, SoapUI, Swagger, JIRA, Azure DevOps, Jenkins and Git. I also have working knowledge of CI/CD, Agile methodologies and Cross-Browser/Mobile testing using platforms like BrowserStack and Sauce Labs. I'm currently exploring AI-assisted testing and Playwright, with growing interest in applying AI to improve QA efficiency and coverage.
 
-      Beyond my professional work, I have always been an active and enthusiastic participant in various activities throughout my academic and personal life. I am a sports enthusiast who has been playing volleyball, badminton and cricket since my school days. I was an active member of several clubs during my school and college years, including the National Cadet Corps (NCC), National Service Scheme (NSS) and National Green Corps (NGC). These experiences helped shape my leadership skills, discipline and a strong sense of teamwork.
+      Beyond my professional work, I have always been an active and enthusiastic participant in various activities throughout my academic and personal life. I am a sports enthusiast who has been playing Volleyball, Badminton and Cricket since my school days. I was an active member of several clubs during my school and college years, including the National Cadet Corps (NCC), National Service Scheme (NSS) and National Green Corps (NGC). These experiences helped shape my leadership skills, discipline and a strong sense of teamwork.
 
      Education:
-     - Bachelor of Engineering (B.E.) in Electrical and Electronics Engineering
-       MSEC, Chennai (2016) | 7.9 CGPA
-     - 12th Grade in IHSS, Pernambut (2012) | 93.25%
-
+     - 12th Grade | IHSS, Pernambut (2012) | 93.25%
+     - Bachelor of Engineering (B.E.) in EEE | MSEC, Chennai (2016) | 7.9 CGPA
+     
      Certifications:
      - ISTQB Foundation Level Certified
      - Microsoft AZ-900 Certified
@@ -63,17 +62,31 @@ export const popupContents = {
 
 
   skill3: {
-    title: "API Testing", text: `Proficient in performing API Testing using Postman to validate API responses, including GET, POST, PUT, DELETE requests and ensuring APIs return the expected status codes, response times and data.
+    title: "Integration Testing", text: `Extensive experience in performing API Testing using Postman to validate API responses, including GET, POST, PUT, DELETE requests and ensuring APIs return the expected status codes, response times and data.
+
+    Proficient in creating and managing Postman Collections, environment variables and automated test scripts using JavaScript to support repeatable and data-driven API testing.
 
     Extensive experience with validating API-UI integration to ensure consistency between the backend data and the user interface, performing checks on response data and ensuring it matches expected results.
 
     Hands-on experience with Swagger for exploring and testing API endpoints, reviewing API documentation and generating API requests directly from the Swagger UI for testing.
 
+    Strong hands-on experience using SoapUI for functional testing of SOAP and REST services, including request creation, assertions, parameterization, and test suite execution.
+
+    Extensive experience in SOAP Web Service Testing by validating WSDL structures, SOAP envelopes, headers and XML-based request/response schemas.
+
     Tested data flow between UI and backend systems via APIs to ensure seamless integration and proper data transmission.
 
-    Strong focus on verifying API authentication, error handling and edge cases to ensure APIs function correctly under various conditions.
-    
-    Experienced in validating third-party API integrations, ensuring successful data flow and proper handling of success, failure and timeout scenarios.    
+    Strong focus on verifying API authentication, authorization mechanisms (OAuth, Basic Auth, Tokens), error handling and edge cases to ensure APIs function correctly under various conditions.
+
+    Experienced in validating third-party API integrations, ensuring successful data flow and proper handling of success, failure and timeout scenarios.
+
+    Hands-on experience using WireMock to simulate APIs and create mock services for isolated testing, enabling validation of dependent integrations even when third-party systems are unavailable.
+
+    Implemented WireMock stubs to mimic various scenarios such as success responses, failures, delays and edge cases to support negative and resilience testing.
+
+    Used service WireMock to enable early testing in CI/CD pipelines and reduce dependency on unstable or rate-limited external environments.
+
+    Hands-on experience in analyzing API integrations using MuleSoft (Anypoint), leveraging Splunk and Decrypt Traces for log monitoring and traceability, and using Fiddler to capture and inspect HTTP/HTTPS traffic for troubleshooting and validation.
 
     Analyzing and reviewing API documentation to understand the functionality and limitations of the API.
 
@@ -109,7 +122,9 @@ export const popupContents = {
 
 
   skill5: {
-    title: "Automation Testing", text: `Hands-on experience in developing and executing automation test scripts using Selenium WebDriver with C# and Java, following best practices like Page Object Model (POM) for reusability and maintainability.
+    title: "Automation Testing", text: `Extensive experience in developing and executing automation test scripts using Selenium WebDriver with C# and Java, following best practices like Page Object Model (POM) for reusability and maintainability.
+
+    Proficient in API integration testing using Rest Assured (Java) and RestSharp (.NET) to validate request-response workflows, and implemented WireMock stubs to simulate dependent services for isolated, reliable test scenarios.
 
     Automated functional and regression test cases for web applications, improving test coverage and reducing manual effort. Integrated test suites into Azure DevOps CI/CD pipelines for continuous testing and faster feedback.
 
@@ -117,15 +132,19 @@ export const popupContents = {
 
     Proficient in debugging automation scripts, handling dynamic elements and synchronization issues and maintaining scripts in response to evolving UI changes.
 
-    Gained hands-on experience in chatbot testing for virtual assistants, validating conversational flows, intent recognition, response accuracy and backend/API integration.
+    Skilled in building and working with automation frameworks including Page Object Model, Data-Driven, Hybrid and BDD using tools like NUnit, MSUnit, XUnit, TestNG, Cucumber and Karate DSL.
 
-    Skilled in building and working with automation frameworks including Page Object Model, Data-Driven, Hybrid and BDD using tools like NUnit, MSUnit, XUnit, TestNG, Cucumber, Rest Assured and Karate DSL.
+    Leveraged GitHub Copilot to accelerate automation framework development by generating reusable utilities, reducing scripting effort and improving consistency.
 
-    Currently learning Python to implement automation using Playwright, while exploring JMeter for performance testing and Appium for mobile automation using Java.`},
+    Used AI suggestions to quickly create locators, test data models, API request templates (Rest) and assertion blocks, enabling faster test case automation. Also used AI in refactoring existing automation code, improving readability, maintainability and adherence to framework design patterns.
+
+    Improved debugging efficiency by using Copilot to propose fixes for issues and edge-case validations.
+
+    Currently learning Typescript to implement automation using Playwright, while exploring to leverage AI to improve Automation`},
 
 
   skill6: {
-    title: "Status Report Generation", text: `Hands-on experience in preparing and sharing daily, weekly and sprint-end QA status reports using Azure DevOps dashboards and query results.
+    title: "Status Report Generation", text: `Extensive experience in preparing and sharing daily, weekly and sprint-end QA status reports using Azure DevOps dashboards and query results.
 
     Worked with Azure DevOps to create and manage Test Plans, Test Suites, Test Runs and Bugs, providing clear and real-time visibility into test execution progress and defect trends.
 
@@ -151,7 +170,7 @@ export const popupContents = {
 
 
   skill7: {
-    title: "Defect Tracking & Reporting", text: `Hands-on experience in defect tracking, logging, updating and reporting using Azure DevOps and JIRA.
+    title: "Defect Tracking & Reporting", text: `Extensive experience in defect tracking, logging, updating and reporting using Azure DevOps and JIRA.
 
     Created detailed and reproducible defect reports in Azure DevOps and JIRA, including steps to reproduce, screenshots, logs and expected vs actual results to help quick debugging.
 
@@ -175,7 +194,7 @@ export const popupContents = {
 
 
   skill8: {
-    title: "Agile & Scrum Methodologies", text: `Hands-on experience working in Agile Scrum environments, actively participating in daily stand-ups, sprint planning, sprint grooming, sprint reviews and retrospectives.
+    title: "Agile & Scrum Methodologies", text: `Extensive experience working in Agile Scrum environments, actively participating in daily stand-ups, sprint planning, sprint grooming, sprint reviews and retrospectives.
 
     Collaborated closely with Product Owners, Scrum Masters, Developers and Business Analysts to ensure shared understanding of requirements and early identification of potential risks.
 
@@ -201,7 +220,7 @@ export const popupContents = {
 
 
   skill9: {
-    title: "Cross-Browser & Mobile Testing", text: `Hands-on experience in Cross-Browser Testing across major browsers like Chrome, Firefox, Safari, Edge to validate UI consistency, functionality and responsiveness.
+    title: "Cross-Browser & Mobile Testing", text: `Experienced in Cross-Browser Testing across major browsers like Chrome, Firefox, Safari, Edge to validate UI consistency, functionality and responsiveness.
 
     Used BrowserStack and Sauce Labs cloud platforms extensively to perform manual testing across multiple browser versions, operating systems and device combinations.
 
@@ -245,7 +264,7 @@ export const popupContents = {
 
     Used Azure DevOps Test Plans for manual and automated test case execution, maintaining detailed history of test runs and outcomes.
 
-    Leveraged JIRA Xray/Zephyr plugins (if applicable) for test case management and linking defects directly with the corresponding test scenarios.
+    Leveraged JIRA Xray/Zephyr plugins for test case management and linking defects directly with the corresponding test scenarios.
 
     Generated and shared test status reports, traceability matrices, defect metrics and test coverage reports with stakeholders and leadership teams.
 
@@ -353,20 +372,43 @@ export const popupContents = {
 
     Skilled in testing multi-platform support, ensuring that the e-commerce site performs well across various devices, browsers and screen sizes for both web and mobile users.`},
 
+    project4: {
+    title: "Roles and Responsibilities", text: `Performed end-to-end API testing for Banking, Loan, Mortgage and Insurance systems to validate secure financial transactions and data integrity.
+
+    Tested REST and SOAP services for account management, payment processing, policy and management workflows.
+
+    Designed and executed API test scenarios using Postman for functional, negative and regression validation.
+
+    Utilized Swagger for contract validation, schema verification and ensuring adherence to API specifications.
+
+    Conducted SOAP service testing using SoapUI, validating WSDLs, XML structures and complex flows.
+
+    Automated API validation using RestSharp, enabling reusable integration test scripts for REST endpoints.
+
+    Created WireMock stubs to simulate REST and SOAP services for isolated testing, third-party dependency and failure scenario validation.
+
+    Executed System Testing by isolating and validating individual services to ensure each API functioned correctly independent of external systems.
+
+    Performed System Integration Testing (SIT) by validating complete workflows from Web/Mobile channels through middleware to backend systems, including database verification.
+
+    Validated authentication and security mechanisms including OAuth, tokens and encryption relevant to financial APIs.
+
+    Performed data validation against backend databases to ensure accuracy of transactions, balances, premiums and loan calculations.
+
+    Tested error handling, reconciliation flows and boundary conditions critical for financial reliability and compliance.
+
+    Ensured APIs met regulatory, audit and performance expectations typical to BFSI environments.`},
+
+
 };
 
 
 document.addEventListener("DOMContentLoaded", function () {
 
   const textContentMap = {
-    'home-desc': `Detail-oriented QA Engineer with 5+ years of experience in manual and automation testing. Skilled in
-        test strategy design, defect tracking and quality assurance best practices.  Experienced in leading QA teams, collaborating with cross-functional teams and ensuring high-quality software delivery. Strong
-        analytical skills and expertise in various testing methodologies.`,
+    'home-desc': `Detail-oriented QA Engineer with 6+ years of experience in Automation and Manual Testing. Skilled in Test Planning, Test Management, Test Strategy Design, Defect Tracking and Quality Assurance best practices. Experienced in leading QA teams, collaborating with cross-functional teams and ensuring high-quality software delivery. Stronge analytical skills and expertise in various testing methodologies.`,
 
-    'about-desc': `I’m Shaukat Ansar, a passionate QA Engineer with over 5 years of experience in both manual and automation testing.
-        I specialize in designing test strategies, analyzing bugs and making sure quality is never compromised. Beyond the test cases and bug reports, I'm someone who finds joy in the small details whether it's catching a tricky bug or getting immersed in a good comic or novel.
-        I'm also a sports enthusiast and I believe the fast-paced nature of the game reflects my approach to testing quick, focused and always aiming for precision. I’m continuously learning, currently exploring advanced automation frameworks and always open to new challenges that push my skills forward.
-        Whether I’m testing software or reading a plot twist, I love exploring the unknown and striving to improve every step of the way.`,
+    'about-desc': `I'm Shaukat Ansar, a passionate QA Engineer with over 6 years of experience in both Automation and Manual Testing. I specialize in designing Test Planning, Test Strategies, Analyzing bugs and making sure quality is never compromised. Beyond the test cases and bug reports, I'm someone who finds joy in the small details whether it's catching a tricky bug or getting immersed in a good comic or novel. I'm also a sports enthusiast and I believe the fast-paced nature of the game reflects my approach to testing quick, focused and always aiming for precision. I'm continuously learning, currently exploring advanced automation frameworks and always open to new challenges that push my skills forward. Whether I'm testing software or reading a plot twist, I love exploring the unknown and striving to improve every step of the way.`,
 
     'button-text1': `View Resume`,
 
@@ -376,7 +418,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     'footer-text1': `Thanks for visiting! — Shaukat Ansar`,
 
-    'footer-text2': `Break apps so users don’t have to.`,
+    'footer-text2': `Break apps so users don't have to.`,
 
     'footer-text3': `Making software fail so that it succeeds.`,
 
@@ -392,17 +434,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     'ph-5': `E-Commerce`,
 
-    'ph-6': `The company runs an e-commerce platform that enables users to browse, purchase and securely pay for products online.`,
+    'ph-6': `The company runs an E-Commerce Health products platform that enables users to browse, purchase and securely pay for products online.`,
 
-    'sk1': `Extensive experience in Manual Testing across web and mobile apps, covering functional, regression and exploratory testing. Skilled in cross-browser testing, defect tracking via JIRA/Azure DevOps and collaborating with cross-functional teams.`,
+    'ph-7': `Banking, Financial Service and Insurance`,
+
+    'ph-8': `Provides secure digital banking, loan, mortgage and insurance services with compliant, scalable and customer-centric solutions.`,
+
+    'sk1': `Extensive experience in Manual Testing across Web, Mobile, Windows app & Salesforce, covering Functional, System, Regression & Exploratory testing. Skilled in Cross-browser testing, defect tracking via JIRA/Azure DevOps and collaborating with cross-functional teams.`,
 
     'sk2': `Proficient in Database Testing by validating backend operations, writing SQL queries and ensuring data accuracy and consistency. Conducted environment validations and collaborated with developers to troubleshoot and resolve data issues.`,
 
-    'sk3': `Hands-on experience in API Testing using Postman and Swagger, validating REST API requests, responses and integrations. Focused on authentication, error handling, data consistency and third-party API validation with detailed verification.`,
+    'sk3': `Extensive experience in API Testing using Postman, SoapUI and Swagger, validating REST/SOAP API requests, responses and integrations. Proficient in using service stubs (eg.,Wiremock) to simulate dependent systems for integration testing with detailed verification.`,
 
-    'sk4': `Extensive expertise in Payments Testing across gateways like PayPal, Apple Pay and SEPA, ensuring secure payment workflows. Performed backend validations, fraud prevention checks and verified transaction logging for global payment methods.`,
+    'sk4': `Extensive expertise in Payments Testing across gateways like PayPal, WorldPay, Vantiv and Hyperwallet, ensuring secure payment workflows. Performed backend validations, fraud prevention checks and verified transaction logging for global payment methods.`,
 
-    'sk5': `Skilled in Selenium WebDriver automation, experienced in building frameworks using Page Object Model, Data-Driven and Hybrid approaches. Integrated tests into Azure DevOps pipelines, with a focus on automation, analysis and script debugging.`,
+    'sk5': `Extensive experience in UI, API Automation and experienced in building frameworks using Page Object Model, BDD, Data-Driven and Hybrid approaches. Integrated tests into AD and Git, with a focus on automation, analysis and script debugging.`,
 
     'sk6': `Proficient in preparing daily, weekly and sprint-end QA reports using Azure DevOps and JIRA dashboards. Highlighted key metrics like defect density, test execution progress and blockers for leadership updates and process improvements.`,
 
