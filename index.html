@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0BN5H38ZJ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-Y0BN5H38ZJ');
+        gtag('config', 'G-ss');
     </script>
 </head>
 
@@ -45,8 +45,8 @@
                 <a href="https://www.instagram.com/born_confused_yo" target="_blank" rel="noopener noreferrer"
                     style="--i:8;"><i class='bx bxl-instagram'></i></a>
             </div>
-            <a href="https://drive.google.com/file/d/1hcZTWpquKoDD6QJH2mXOzPUVH-nMDG17/view?usp=drivesdk" target="_blank"
-                rel="noopener noreferrer" style="--i:9;" class="button" id="button-text1"></a>
+            <a href="https://drive.google.com/file/d/1hcZTWpquKoDD6QJH2mXOzPUVH-nMDG17/view?usp=drivesdk"
+                target="_blank" rel="noopener noreferrer" style="--i:9;" class="button" id="button-text1"></a>
         </div>
 
         <div class="home-img">
@@ -277,12 +277,24 @@
     <div id="toast" class="toast"></div>
 
     <script>
-        fetch("https://my-counter-omega.vercel.app/api/counter")
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById("visitCount").innerText = data.count;
-                console.log("Visit count:", data.count);
+        async function updateVisitCount() {
+
+            // Get token from Token Service
+            const tokenRes = await fetch("https://create-token-lyart.vercel.app/api/token");
+            const { token } = await tokenRes.json();
+
+            // Use token to call Counter API
+            const countRes = await fetch("https://my-counter-omega.vercel.app/api/counter", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
             });
+
+            const data = await countRes.json();
+            document.getElementById("visitCount").innerText = data.count;
+        }
+
+        updateVisitCount();
     </script>
 
 </body>
