@@ -85,7 +85,7 @@ window.onload = function () {
             message: document.getElementById("message").value,
         };
 
-        fetch('https://emailbackend-kappa.vercel.app/send-email', {  
+        fetch('https://emailbackend-kappa.vercel.app/api/sendemail', {  
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
