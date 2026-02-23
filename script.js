@@ -89,7 +89,7 @@ window.onload = function () {
             const tokenResponse = await fetch("https://create-token-lyart.vercel.app/api/token");
             const tokenData = await tokenResponse.json();
 
-            const response = await fetch("https://emailbackend-kappa.vercel.app/api/send-email", {
+            const response = await fetch("https://emailbackend-kappa.vercel.app/api/sendemail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
