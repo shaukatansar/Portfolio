@@ -72,11 +72,10 @@ import { popupContents } from './textContent.js';
 }
 
 // ========== Email ==========
-<script>
 window.onload = function () {
 
     document.getElementById("contact-form").addEventListener("submit", async function (e) {
-        e.preventDefault(); // prevent page refresh
+        e.preventDefault();
 
         const params = {
             name: document.getElementById("name").value,
@@ -87,26 +86,14 @@ window.onload = function () {
         };
 
         try {
-            // --------------------------------------------------
-            // 🔐 STEP 1 — Request Short-Lived Token
-            // --------------------------------------------------
             const tokenResponse = await fetch("https://create-token-lyart.vercel.app/api/token");
             const tokenData = await tokenResponse.json();
 
-            if (!tokenData.token) {
-                throw new Error("Token not received");
-            }
-
-            const token = tokenData.token;
-
-            // --------------------------------------------------
-            // 🔐 STEP 2 — Call Email API With Bearer Token
-            // --------------------------------------------------
             const response = await fetch("https://emailbackend-kappa.vercel.app/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`   // ← Important
+                    "Authorization": "Bearer " + tokenData.token
                 },
                 body: JSON.stringify(params),
             });
@@ -117,18 +104,16 @@ window.onload = function () {
                 showToast("Message Sent!!", "success");
                 document.getElementById("contact-form").reset();
             } else {
-                console.error("FAILED...", data.error);
                 showToast("Something went wrong. Try again!", "error");
             }
 
-        } catch (error) {
-            console.error("Error:", error);
+        } catch (err) {
+            console.error(err);
             showToast("Something went wrong. Try again!", "error");
         }
     });
 
 };
-</script>
 
 // ========== AboutMe ==========
 {
