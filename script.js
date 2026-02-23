@@ -72,12 +72,13 @@ import { popupContents } from './textContent.js';
 }
 
 // ========== Email ==========
-{
+<script>
 window.onload = function () {
-    document.getElementById("contact-form").addEventListener("submit", function (e) {
+
+    document.getElementById("contact-form").addEventListener("submit", async function (e) {
         e.preventDefault(); // prevent page refresh
 
-        let params = {
+        const params = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
             number: document.getElementById("number").value,
@@ -85,15 +86,33 @@ window.onload = function () {
             message: document.getElementById("message").value,
         };
 
-        fetch('https://emailbackend-kappa.vercel.app/api/sendemail', {  
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(params),
-        })
-        .then(response => response.json())
-        .then(data => {
+        try {
+            // --------------------------------------------------
+            // 🔐 STEP 1 — Request Short-Lived Token
+            // --------------------------------------------------
+            const tokenResponse = await fetch("https://create-token-lyart.vercel.app/api/token");
+            const tokenData = await tokenResponse.json();
+
+            if (!tokenData.token) {
+                throw new Error("Token not received");
+            }
+
+            const token = tokenData.token;
+
+            // --------------------------------------------------
+            // 🔐 STEP 2 — Call Email API With Bearer Token
+            // --------------------------------------------------
+            const response = await fetch("https://emailbackend-kappa.vercel.app/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`   // ← Important
+                },
+                body: JSON.stringify(params),
+            });
+
+            const data = await response.json();
+
             if (data.success) {
                 showToast("Message Sent!!", "success");
                 document.getElementById("contact-form").reset();
@@ -101,14 +120,15 @@ window.onload = function () {
                 console.error("FAILED...", data.error);
                 showToast("Something went wrong. Try again!", "error");
             }
-        })
-        .catch(error => {
+
+        } catch (error) {
             console.error("Error:", error);
             showToast("Something went wrong. Try again!", "error");
-        });
+        }
     });
+
 };
-}
+</script>
 
 // ========== AboutMe ==========
 {
